@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/../GymAppDemo" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../GymGit" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../Module 1 UI/Lesson Apps/SemiProgramaticLayout" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app" vcs="Git" />
   </component>
 </project>
