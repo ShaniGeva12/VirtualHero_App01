@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">גיבור וירטואלי</string>
+    <string name="credit">© Shani_Geva ©</string>
+    <string name="choose_str">- בחר -</string>
+    <string name="enter">הכנס/י שם</string>
+    <string name="female">נקבה</string>
+    <string name="hello">שלום</string>
+    <string name="hello_female">שלום</string>
+    <string name="hello_male">שלום</string>
+    <string name="male">זכר</string>
+    <string name="ok">אוקיי</string>
+    <string name="rate">דרגו את האפליקציה</string>
+    <string name="rating_tnx">תודה על הדירוג!</string>
+    <string name="sex">מין:</string>
+    <string name="starts">כוכבים</string>
+    <string name="unknown_sex">לא רלוונטי</string>
+    <string name="wlcm_str">ברוכ/ה הבא/ה</string>
+    <string name="wlcm_str_female">ברוכה הבאה</string>
+    <string name="wlcm_str_male">ברוך הבא</string>
+    <string name="login_must">עלייך להתחבר</string>
+    <string name="hero">גיבור</string>
+    <string name="vilian">נבל</string>
+    <string name="lightSideBtnTxt">צד האור ( גיבורים )</string>
+    <string name="darkSideBtnTxt">צד האופל ( רשעים )</string>
+    <string name="continue_btn_txt">המשך</string>
+    <string name="character_sex">מין הדמות:</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/supergroup_vh_new_logo_brushed_sml">
+
+
+        <!-- Header aligned to top -->
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center">
+
+            <!-- <TextView
+                 android:id="@+id/title_ly"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/wlcm_str"
+                 android:textColor="@color/text_color_secondary"
+                /> -->
+
+        </RelativeLayout>
+
+        <!-- Footer aligned to bottom -->
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/credits_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credit"
+                android:textColor="@color/text_color_thirdly"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/main_frame_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/footer"
+            android:layout_below="@id/header"
+            android:gravity="center"
+            >
+
+            <RelativeLayout
+                android:id="@+id/name_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="35dp"
+                android:paddingLeft="35dp"
+                android:paddingEnd="35dp"
+                android:paddingRight="35dp"
+                android:gravity="center"
+                android:layout_marginTop="300dp"
+                android:background="@color/white_50precent"
+                >
+
+            <EditText
+                android:id="@+id/name_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter"
+                android:inputType="textPersonName"
+
+                android:layout_marginTop="20dp"
+                android:imeOptions="actionSend"
+                android:textColor="@color/colorPrimaryDarkBlack"
+                android:textColorHint="@color/colorPrimaryDarkBlack" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_enter"
+                android:layout_alignLeft="@+id/name_enter"
+                android:layout_alignRight="@+id/name_enter"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+
+                android:background="@drawable/button_bg_rounded_corners"
+                android:text="@string/ok"
+                android:textColor="@color/text_color_thirdly" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

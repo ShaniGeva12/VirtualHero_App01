@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">VirtualHero</string>
+    <string name="credit">© Shani_Geva ©</string>
+    <string name="choose_str">"- Choose - "</string>
+    <string name="hello">Hello</string>
+    <string name="sex">Sex:</string>
+    <string name="hero">Hero</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="unknown_sex">Not Specified</string>
+    <string name="wlcm_str_male">Welcome!</string>
+    <string name="wlcm_str_female">Welcome!</string>
+    <string name="hello_male">Hi dude</string>
+    <string name="hello_female">Hey girl!</string>
+    <string name="rate">Rate This App</string>
+    <string name="rating_tnx">Thanks for rating us!</string>
+    <string name="starts">Stars</string>
+    <string name="wlcm_str">Welcome</string>
+    <string name="enter">Enter your name here</string>
+    <string name="ok">ok</string>
+    <string name="login_must">Login first!</string>
+
+    <string-array name="Categories">
+        <item>@string/choose_str</item>
+    </string-array>
+    <string name="vilian">Vilian</string>
+    <string name="darkSideBtnTxt">Dark Side ( Villains )</string>
+    <string name="lightSideBtnTxt">Light Side ( Heros )</string>
+    <string name="continue_btn_txt">Continue</string>
+    <string name="character_sex">Character Sex:</string>
+</resources>
