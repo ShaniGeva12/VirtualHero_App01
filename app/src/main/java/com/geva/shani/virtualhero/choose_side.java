@@ -66,7 +66,7 @@ public class choose_side extends AppCompatActivity {
                 }
                 else
                 {
-                    lightSideBtn.setBackgroundResource(R.drawable.button_bg_rounded_corners);
+                    lightSideBtn.setBackgroundResource(R.drawable.button02_bg_rounded_corners);
                     light_flag = 0;
                 }
             }
@@ -82,7 +82,7 @@ public class choose_side extends AppCompatActivity {
                 }
                 else
                 {
-                    darkSideBtn.setBackgroundResource(R.drawable.button_bg_rounded_corners);
+                    darkSideBtn.setBackgroundResource(R.drawable.button02_bg_rounded_corners);
                     dark_flag = 0;
                 }
             }

@@ -97,7 +97,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/button_bg_rounded_corners"
+                    android:background="@drawable/button02_bg_rounded_corners"
                     android:text="@string/lightSideBtnTxt"
                     android:textColor="@color/text_color_thirdly" />
 
@@ -108,7 +108,7 @@
                     android:layout_below="@+id/superheros_btn"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/button_bg_rounded_corners"
+                    android:background="@drawable/button02_bg_rounded_corners"
                     android:text="@string/darkSideBtnTxt"
                     android:textColor="@color/text_color_thirdly" />
 
