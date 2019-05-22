@@ -2,9 +2,11 @@ package com.geva.shani.virtualhero;
 
 import android.app.Dialog;
 import android.app.SearchManager;
+import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.provider.AlarmClock;
 import android.provider.CalendarContract;
 import android.provider.ContactsContract;
 import android.support.v7.widget.CardView;
@@ -14,18 +16,22 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
    // private final Context context;
     private final String str;
     private final Context context;
     private ArrayList<Character> mDataset_character;
+
 
 
 
@@ -166,14 +172,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 //to do addEvent
                 // openEnterMeetingTimeDialog(); enterMeetingTimeDialog
                 addEvent(context.getResources().getString(R.string.meeting) +
-                        " " + mDataset_character.get(position).getName());
+                        " " + mDataset_character.get(position).getName() ,
+                        context.getResources().getString(R.string.hit_holon) );
             }
         });
 
         holder.alarm_IB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //to do
+                //to do createAlarm
+                createAlarm(context.getResources().getString(R.string.meeting) +
+                        " " + mDataset_character.get(position).getName() , 10 , 0);
             }
         });
 
@@ -245,12 +254,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         }
     }
 
-    public void addEvent(String title) {
+    public void addEvent(String title, String location) {
         Intent intent = new Intent(Intent.ACTION_INSERT)
                 .setData(CalendarContract.Events.CONTENT_URI)
-                .putExtra(CalendarContract.Events.TITLE, title) ;
+                .putExtra(CalendarContract.Events.TITLE, title)
+                .putExtra(CalendarContract.Events.EVENT_LOCATION, location);
         /*
-                .putExtra(Events.EVENT_LOCATION, location)
                 .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, begin)
                 .putExtra(CalendarContract.EXTRA_EVENT_END_TIME, end);
         */
@@ -258,4 +267,15 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             context.startActivity(intent);
         }
     }
+
+    public void createAlarm(String message, int hour, int minutes) {
+        Intent intent = new Intent(AlarmClock.ACTION_SET_ALARM)
+                .putExtra(AlarmClock.EXTRA_MESSAGE, message)
+                .putExtra(AlarmClock.EXTRA_HOUR, hour)
+                .putExtra(AlarmClock.EXTRA_MINUTES, minutes);
+        if (intent.resolveActivity(context.getPackageManager()) != null) {
+            context.startActivity(intent);
+        }
+    }
+
 }

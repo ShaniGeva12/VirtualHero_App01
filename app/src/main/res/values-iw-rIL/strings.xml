@@ -35,4 +35,6 @@
     <string name="catwoman">קטוומן</string>
     <string name="your_choise">"בחרת לצפות ב: "</string>
     <string name="meeting">פגישה עם</string>
+    <string name="gotta_choose">בחר צד (גיבורים / נבלים)</string>
+    <string name="hit_holon">המכון הטכנולוגי חולון</string>
 </resources>

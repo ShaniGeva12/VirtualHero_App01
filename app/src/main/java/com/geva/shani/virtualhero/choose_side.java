@@ -120,7 +120,10 @@ public class choose_side extends AppCompatActivity {
                         break;
                 }
 
-                movePage(view, dark_flag , light_flag,ch_sex);
+                if(dark_flag==0 && light_flag==0)
+                    Toast.makeText(choose_side.this, getResources().getString(R.string.gotta_choose), Toast.LENGTH_SHORT).show();
+                else
+                    movePage(view, dark_flag , light_flag,ch_sex);
             }
         });
 

@@ -23,7 +23,7 @@
     <string-array name="Categories">
         <item>@string/choose_str</item>
     </string-array>
-    <string name="vilian">Vilian</string>
+    <string name="vilian">Villain</string>
     <string name="darkSideBtnTxt">Dark Side ( Villains )</string>
     <string name="lightSideBtnTxt">Light Side ( Heros )</string>
     <string name="continue_btn_txt">Continue</string>
@@ -38,4 +38,6 @@
     <string name="catwoman">Catwoman</string>
     <string name="your_choise">Your Choise Of Character:</string>
     <string name="meeting">Meeting with</string>
+    <string name="gotta_choose">Choose Side (Hero / Villain)</string>
+    <string name="hit_holon">HiT Holon</string>
 </resources>

@@ -21,7 +21,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:background="@color/white_50precent">
+            android:background="@color/white_50precent"
+            android:padding="4dp">
 
             <TextView
                 android:id="@+id/title_txt"
@@ -67,6 +68,7 @@
 
             <!-- A RecyclerView with some commonly used attributes -->
             <android.support.v7.widget.RecyclerView
+                android:clipToPadding="false"
                 android:id="@+id/my_recycler_view"
                 android:scrollbars="vertical"
                 android:layout_width="match_parent"
