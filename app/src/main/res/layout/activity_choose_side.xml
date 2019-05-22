@@ -51,120 +51,127 @@
         </RelativeLayout>
 
         <!-- Main between footer & bottom -->
-        <RelativeLayout
-            android:id="@+id/main_frame_ly"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@id/footer"
-            android:layout_below="@id/header"
-            >
-
-
-        <RelativeLayout
-                android:id="@+id/choose_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                >
-
-         <TextView
-            android:id="@+id/choose_txt"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/choose_str"
-            android:textColor="@color/colorPrimaryDarkBlack"
-             android:layout_marginTop="20dp"/>
-            </RelativeLayout>
+            android:layout_above="@id/footer"
+            android:layout_below="@id/header">
 
             <RelativeLayout
-                android:id="@+id/btns_layout"
+                android:id="@+id/main_frame_ly"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/choose_layout"
-                android:layout_marginTop="6dp"
-                android:layout_marginBottom="40dp"
-                android:paddingTop="30dp"
-                android:paddingBottom="30dp"
-                android:gravity="center"
-                android:paddingStart="30dp"
-                android:paddingLeft="40dp"
-                android:paddingEnd="40dp"
-                android:paddingRight="40dp">
+                android:layout_height="match_parent"
+                >
 
-                <Button
-                    android:id="@+id/superheros_btn"
+
+                <RelativeLayout
+                    android:id="@+id/choose_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/button02_bg_rounded_corners"
-                    android:text="@string/lightSideBtnTxt"
-                    android:textColor="@color/text_color_thirdly" />
+                    android:gravity="center"
+                    >
 
-                <Button
-                    android:id="@+id/vilians_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/superheros_btn"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/button02_bg_rounded_corners"
-                    android:text="@string/darkSideBtnTxt"
-                    android:textColor="@color/text_color_thirdly" />
-
-
-                <TextView
-                    android:id="@+id/sex"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/vilians_btn"
-                    android:paddingTop="10dp"
-                    android:text="@string/character_sex"
-                    android:textColor="@color/text_color_secondary" />
-
-                <RadioGroup
-                    android:id="@+id/sexRadioGroup"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/sex">
-
-                    <RadioButton
-                        android:id="@+id/male_checkbox"
+                    <TextView
+                        android:id="@+id/choose_txt"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/male"
+                        android:layout_height="wrap_content"
+                        android:text="@string/choose_str"
+                        android:textColor="@color/colorPrimaryDarkBlack"
+                        android:layout_marginTop="20dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btns_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/choose_layout"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="40dp"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:gravity="center"
+                    android:paddingStart="30dp"
+                    android:paddingLeft="40dp"
+                    android:paddingEnd="40dp"
+                    android:paddingRight="40dp">
+
+                    <Button
+                        android:id="@+id/superheros_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button02_bg_rounded_corners"
+                        android:text="@string/lightSideBtnTxt"
+                        android:textColor="@color/text_color_thirdly" />
+
+                    <Button
+                        android:id="@+id/vilians_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/superheros_btn"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button02_bg_rounded_corners"
+                        android:text="@string/darkSideBtnTxt"
+                        android:textColor="@color/text_color_thirdly" />
+
+
+                    <TextView
+                        android:id="@+id/sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vilians_btn"
+                        android:paddingTop="10dp"
+                        android:text="@string/character_sex"
                         android:textColor="@color/text_color_secondary" />
 
-                    <RadioButton
-                        android:id="@+id/female_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/female"
-                        android:textColor="@color/text_color_secondary" />
+                    <RadioGroup
+                        android:id="@+id/sexRadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sex">
 
-                    <RadioButton
-                        android:id="@+id/unknown_sex_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:checked="true"
-                        android:text="@string/unknown_sex"
-                        android:textColor="@color/text_color_secondary" />
-                </RadioGroup>
+                        <RadioButton
+                            android:id="@+id/male_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/male"
+                            android:textColor="@color/text_color_secondary" />
 
-                <Button
-                    android:id="@+id/choice_enter_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/sexRadioGroup"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/button_bg_rounded_corners"
-                    android:text="@string/continue_btn_txt"
-                    android:textColor="@color/text_color_thirdly" />
+                        <RadioButton
+                            android:id="@+id/female_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/female"
+                            android:textColor="@color/text_color_secondary" />
+
+                        <RadioButton
+                            android:id="@+id/unknown_sex_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:text="@string/unknown_sex"
+                            android:textColor="@color/text_color_secondary" />
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/choice_enter_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sexRadioGroup"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button_bg_rounded_corners"
+                        android:text="@string/continue_btn_txt"
+                        android:textColor="@color/text_color_thirdly" />
+
+                </RelativeLayout>
 
             </RelativeLayout>
 
-        </RelativeLayout>
+        </ScrollView>
+
 
     </RelativeLayout>
 
