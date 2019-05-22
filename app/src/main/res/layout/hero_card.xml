@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <!-- A CardView that contains a TextView and buttons -->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="@color/white_50precent"
+        card_view:cardMaxElevation="1dp"
+        card_view:cardElevation="1dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/name_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hero_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"/>
+            <!-- android:text="@string/batman" -->
+        <TextView
+                android:id="@+id/hero_sex_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:id="@+id/btns_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_ly"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            >
+
+            <!-- intents we learned in class -->
+
+            <ImageButton
+                android:id="@+id/call_IB"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round"
+                android:src="@drawable/ic_outline_call_24px" />
+
+            <ImageButton
+                android:id="@+id/mail_IB"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round"
+                android:src="@drawable/ic_outline_alternate_email_24px" />
+
+            <ImageButton
+                android:id="@+id/web_IB"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round"
+                android:src="@drawable/ic_outline_web_24px" />
+
+            <!-- intents we didn't learn in class -->
+
+            <ImageButton
+                android:id="@+id/addContact_IB"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round"
+                android:src="@drawable/ic_outline_account_circle_24px" />
+
+            <ImageButton
+                android:id="@+id/search_web_IB"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round"
+                android:src="@drawable/ic_outline_find_in_page_24px" />
+
+            <ImageButton
+                android:id="@+id/calender_IB"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round"
+                android:src="@drawable/ic_outline_calendar_today_24px" />
+
+            <ImageButton
+                android:id="@+id/alarm_IB"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round"
+                android:src="@drawable/ic_outline_alarm_24px" />
+        </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

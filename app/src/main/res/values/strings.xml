@@ -28,4 +28,14 @@
     <string name="lightSideBtnTxt">Light Side ( Heros )</string>
     <string name="continue_btn_txt">Continue</string>
     <string name="character_sex">Character Sex:</string>
+    <string name="batman">Batman</string>
+    <string name="superman">Superman</string>
+    <string name="iron_man">Iron Man</string>
+    <string name="captain_america">Captain America</string>
+    <string name="joker">Joker</string>
+    <string name="harley_quinn">Harley Quinn</string>
+    <string name="thanos">Thanos</string>
+    <string name="catwoman">Catwoman</string>
+    <string name="your_choise">Your Choise Of Character:</string>
+    <string name="meeting">Meeting with</string>
 </resources>

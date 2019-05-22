@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -12,6 +13,12 @@ import android.widget.Toast;
 import java.util.Locale;
 
 public class choose_side extends AppCompatActivity {
+
+    public static final String EXTRA_DARK_FLAG = "com.geva.shani.virtualhero.DARK_FLAG";
+    public static final String EXTRA_LIGHT_FLAG = "com.geva.shani.virtualhero.LIGHT_FLAG";
+    public static final String EXTRA_CH_SEX = "com.geva.shani.virtualhero.CH_SEX";
+
+
     private TextView welcome_str;
     private RelativeLayout rl;
     private String device_language;
@@ -21,6 +28,8 @@ public class choose_side extends AppCompatActivity {
     private Button cont_btn;
     private int light_flag;
     private int dark_flag;
+    private RadioGroup radioSexGroup;
+    private String ch_sex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +40,8 @@ public class choose_side extends AppCompatActivity {
         dark_flag=0;
 
         cont_btn = findViewById(R.id.choice_enter_btn);
+
+        radioSexGroup  = (RadioGroup)findViewById(R.id.sexRadioGroup);
 
         rl = findViewById(R.id.main_layout);
         device_language = Locale.getDefault().getDisplayLanguage().toString();
@@ -89,11 +100,27 @@ public class choose_side extends AppCompatActivity {
         });
 
 
+
         cont_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                movePage(view, "");
-                //change move page to get the flags and also sex from radio group
+
+                int selectedId = radioSexGroup.getCheckedRadioButtonId();
+                switch(selectedId){
+                    case R.id.male_checkbox:
+                        // do operations specific to this selection
+                        ch_sex = getResources().getString(R.string.male);
+                        break;
+                    case R.id.female_checkbox:
+                        ch_sex = getResources().getString(R.string.female);
+                        break;
+
+                    default:
+                        ch_sex = getResources().getString(R.string.unknown_sex);
+                        break;
+                }
+
+                movePage(view, dark_flag , light_flag,ch_sex);
             }
         });
 
@@ -102,10 +129,12 @@ public class choose_side extends AppCompatActivity {
 
     }
 
-    public void movePage(View view, String name)
+    public void movePage(View view,int dark_flag,int light_flag, String charter_sex)
     {
-        Intent intent = new Intent(choose_side.this, choose_side.class);
-        //intent.putExtra(EXTRA_USERNAME , name);
+        Intent intent = new Intent(choose_side.this, heros_list.class);
+        intent.putExtra(EXTRA_DARK_FLAG , dark_flag);
+        intent.putExtra(EXTRA_LIGHT_FLAG , light_flag);
+        intent.putExtra(EXTRA_CH_SEX , charter_sex);
         startActivity(intent);
     }
 }

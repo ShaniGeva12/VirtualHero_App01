@@ -25,4 +25,14 @@
     <string name="darkSideBtnTxt">צד האופל ( רשעים )</string>
     <string name="continue_btn_txt">המשך</string>
     <string name="character_sex">מין הדמות:</string>
+    <string name="batman">באטמן</string>
+    <string name="superman">סופרמן</string>
+    <string name="iron_man">איירון מן</string>
+    <string name="captain_america">קפטן אמריקה</string>
+    <string name="harley_quinn">הארלי קווין</string>
+    <string name="joker">ג\'וקר</string>
+    <string name="thanos">ת\'אנוס</string>
+    <string name="catwoman">קטוומן</string>
+    <string name="your_choise">"בחרת לצפות ב: "</string>
+    <string name="meeting">פגישה עם</string>
 </resources>

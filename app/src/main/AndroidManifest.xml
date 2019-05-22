@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/DarkSuperHeroTheme">
-        <activity android:name=".choose_side"></activity>
+        <activity android:name=".heros_list"></activity>
+        <activity android:name=".choose_side" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/DarkSuperHeroTheme.NoActionBar">
