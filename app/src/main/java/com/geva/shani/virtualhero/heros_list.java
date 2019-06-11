@@ -30,13 +30,13 @@ public class heros_list extends AppCompatActivity {
 
         // Capture the layout's TextView and set the string as its text
         if(dark_flag==1 && light_flag==1)
-            titleTxt.setText(getResources().getString(R.string.your_choise) + " " + getResources().getString(R.string.hero)
+            titleTxt.setText(" " + getResources().getString(R.string.your_choise) + "\n" + "  " + getResources().getString(R.string.hero)
                     +  " / " + getResources().getString(R.string.vilian) +  " " + ch_sex);
         else if(dark_flag == 1)
-            titleTxt.setText(getResources().getString(R.string.your_choise) + " "
+            titleTxt.setText(" " + getResources().getString(R.string.your_choise) + " "
                     +  " " + getResources().getString(R.string.vilian) +  " " + ch_sex);
         else if(light_flag == 1)
-            titleTxt.setText(getResources().getString(R.string.your_choise) + " "
+            titleTxt.setText(" " + getResources().getString(R.string.your_choise) + " "
                     + getResources().getString(R.string.hero) +  " " + ch_sex);
 
         //----------------------------------------------------------------------------------

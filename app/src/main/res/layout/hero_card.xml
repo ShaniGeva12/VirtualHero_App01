@@ -16,15 +16,21 @@
         android:layout_height="wrap_content"
         card_view:cardCornerRadius="4dp"
         card_view:cardBackgroundColor="@color/white_50precent"
+
         card_view:cardMaxElevation="2dp"
         card_view:cardElevation="2dp"
+
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         android:paddingBottom="8dp"
         android:paddingTop="12dp"
+
         android:layout_marginBottom="12dp"
         android:layout_marginTop="12dp"
         >
+        <!--
+
+        -->
 
         <LinearLayout
             android:id="@+id/name_ly"

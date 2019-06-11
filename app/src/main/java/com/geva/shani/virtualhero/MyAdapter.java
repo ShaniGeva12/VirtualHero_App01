@@ -33,8 +33,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     private ArrayList<Character> mDataset_character;
 
 
-
-
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
     // you provide access to all the views for a data item in a view holder
@@ -54,6 +52,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         private ImageButton alarm_IB;
         private ImageButton web_IB;
 
+
         //TextView personAge;
         //ImageView personPhoto;
         //public TextView textView;
@@ -72,6 +71,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             calender_IB = (ImageButton)itemView.findViewById(R.id.calender_IB);
             alarm_IB = (ImageButton)itemView.findViewById(R.id.alarm_IB);
             web_IB = (ImageButton)itemView.findViewById(R.id.web_IB);
+
+            characterName.setTextSize(20);
 
         }
     }
@@ -120,6 +121,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.characterName.setText(mDataset_character.get(position).getName());
         holder.characterSex.setText(mDataset_character.get(position).getSex());
 
+
+        //holder.call_IB.setOnClickListener(new View.OnClickListener()
         holder.call_IB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
